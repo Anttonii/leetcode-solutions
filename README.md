@@ -3,7 +3,7 @@ Solutions to leetcode problems I've solved, kept here for quick reference and le
 
 # Current status
 
-There are currently 15 solutions in this repository, of which:
+There are currently 21 solutions in this repository, of which:
 
  - 10 are written in Python
- - 5 are written in C++
+ - 11 are written in C++

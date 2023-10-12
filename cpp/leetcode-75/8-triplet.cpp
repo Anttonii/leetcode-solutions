@@ -1,8 +1,8 @@
 class Solution {
 public:
     bool increasingTriplet(vector<int>& nums) {
-        int se = 2147483647;
-        int sse = 2147483647;
+        int se = 2147483647;  // smallest element
+        int sse = 2147483647; // second smallest element
         for(int i = 0; i < nums.size(); i++)
         {
             if (nums[i] <= se) se = nums[i];

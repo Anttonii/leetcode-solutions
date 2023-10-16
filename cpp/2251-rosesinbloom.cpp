@@ -10,7 +10,7 @@ public:
         else 
         {
             // if there is a duplicate case, search for the largest index for which b[i] == val with binary search
-            if(mid+1 < b.size() && b[mid] == b[mid+1]) return bsearch(b, val, mid+1, e);
+            if(mid + 1 < b.size() && b[mid] == b[mid+1]) return bsearch(b, val, mid+1, e);
             else return mid;
         }
     } 

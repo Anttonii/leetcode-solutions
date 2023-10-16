@@ -10,7 +10,6 @@
 
 class Solution {
 public:
-    // fairly cumbersome solution that attempts to call mountainArray.get least amount of times
     pair<int, int> findPeak(MountainArray& arr, int lo, int hi)
     {
         int mid = (int) floor((lo + hi) / 2);
@@ -47,6 +46,8 @@ public:
     }
 
     int findInMountainArray(int target, MountainArray &mountainArr) {
+        // fairly verbose solution
+        // time complexity o(log n) space complexity o(1)
         int len = mountainArr.length();
         
         pair<int, int> peak = findPeak(mountainArr, 0, len - 1);

@@ -1,6 +1,7 @@
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
+        // time complexity o(3n) space complexity o(2n)
         vector<int> rSums(nums.size() + 1, 0);
         vector<int> lSums(nums.size() + 1, 0);
 

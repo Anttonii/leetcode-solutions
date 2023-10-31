@@ -3,9 +3,9 @@ Solutions to leetcode problems I've solved, kept here for quick reference and le
 
 # Current status
 
-There are currently 45 uncategorized solutions in this repository, of which:
+There are currently 48 uncategorized solutions in this repository, of which:
 
  - 10 are written in Python
- - 35 are written in C++
+ - 38 are written in C++
 
  On top of that the Leetcode 75 currently has 24 out of its 75 exercises completed in C++.

@@ -8,22 +8,27 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution {
+class Solution
+{
 public:
-    ListNode* swapPairs(ListNode* head) {
-        if(head == NULL || head->next == NULL) return head;
+    ListNode *swapPairs(ListNode *head)
+    {
+        if (head == NULL || head->next == NULL)
+            return head;
 
-        ListNode* curr = head;
-        ListNode* res = curr->next;
-        ListNode* prev = NULL;
-        while(curr->next != NULL)
+        ListNode *curr = head;
+        ListNode *res = curr->next;
+        ListNode *prev = NULL;
+        while (curr->next != NULL)
         {
-            ListNode * next = curr->next->next;
-            if(prev != NULL) prev->next = curr->next;
+            ListNode *next = curr->next->next;
+            if (prev != NULL)
+                prev->next = curr->next;
             curr->next->next = curr;
             curr->next = next;
             prev = curr;
-            if(curr->next != NULL) curr = curr->next;
+            if (curr->next != NULL)
+                curr = curr->next;
         }
         return res;
     }
